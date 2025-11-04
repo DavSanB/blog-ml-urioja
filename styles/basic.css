@@ -1,1 +1,191 @@
+:root {
+    --primary-color: #3c7a89;
+    --dark-color: #2b2b2b;
+    --light-color: #f4f4f4;
+    --text-color: #333;
+    --border-color: #ddd;
+    --font-family: 'Inter', sans-serif;
+}
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: var(--light-color);
+    color: var(--text-color);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #D4D4D4;
+}
+
+header .logo-header{
+    display: flex;
+}
+
+header .logo-header button{
+    padding: 10px;
+
+    background-color: var(--light-color);
+    border: none;
+}
+
+header .logo-header a{
+    text-decoration: none;
+    color: black;
+}
+
+header .perfil-header{
+    display: flex;
+}
+
+header .perfil-header button{
+    padding: 10px;
+
+    background-color: var(--light-color);
+    border: none;
+}
+
+header .perfil-header .perfil img{
+    border-radius: 25px;
+}
+
+main{
+    display: flex;
+}
+main nav{
+    width:25%;
+    padding-top: 50px;
+
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #D4D4D4;
+}
+
+main nav ul li{
+    padding: 0 20px 20px 20px;
+}
+
+main nav ul li a{
+    text-decoration: none;
+    color: #999999;
+}
+
+main nav ul li a.active{
+    color: black;
+}
+
+main .post-list{
+    width: 50%;
+}
+
+main .recomendados{
+    width: 25%;
+
+    padding: 30px;
+
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: #D4D4D4;
+
+    font-size: 14px;
+}
+
+main .recomendados h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    font-size: 18px;
+}
+main .recomendados .frases ul{
+    list-style-type: none;
+}
+
+main .recomendados .frases .perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+main .recomendados .frases .perfil img{
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+main .recomendados .temas .contenido{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+main .recomendados .temas .contenido span{
+    background-color: #D4D4D4;
+    margin: 5px;
+    padding: 10px;
+
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+main .recomendados .personas ul{
+    list-style-type: none;
+}
+
+main .recomendados .personas li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+main .recomendados .personas li img{
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+main .main-content{
+    margin: 30px 300px 0px 300px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main .main-content h2{
+    margin: 10px;
+}
+
+main .main-content hr{
+    margin: 20px;
+    background-color: #D4D4D4;
+}
+
+main .main-content .post-card{
+    display: flex;
+}
+
+main .main-content .post-card img{
+    width:300px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
