@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de ML Avanzado</title>
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/articulo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f4d5ee3736.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-header">
+                <button>
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </button>
+                <a href="index.html">
+                    <h1 class="logo">Sandoval</h1>
+                </a>
+            </div>
+            <div class="perfil-header">
+                <button>
+                    <i class="fa-regular fa-bell fa-xl"></i>
+                </button>
+                <span class="perfil">
+                    <img src="https://placehold.co/40x40/orange/white?font=montserrat&text=D">
+                </span>
+            </div>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fa-solid fa-house"></i>
+                            Inicio
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="main-content">
+            
+                <h1 class="post-title-full">Introducción al Machine Learning: Más Allá de los Algoritmos</h1>
+                
+                <img src="https://placehold.co/800x400/5a9bd3/ffffff?text=Intro+a+ML" alt="Imagen introductoria de Machine Learning" class="post-image-full">
+                
+                <div class="post-content-full">
+                    <p>El Machine Learning (ML), o Aprendizaje Automático, es una disciplina de la inteligencia artificial que se enfoca en crear sistemas que pueden aprender y mejorar a partir de la experiencia, sin ser explícitamente programados para cada tarea.</p>
+
+                    <h3>Tipos de Aprendizaje Automático</h3>
+                    <p>Existen tres categorías principales de Machine Learning:</p>
+                    
+                    <h4>1. Aprendizaje Supervisado</h4>
+                    <p>En este enfoque, el algoritmo aprende a partir de un conjunto de datos "etiquetados". Cada dato de entrada tiene una "etiqueta" o respuesta correcta. El objetivo es que el modelo aprenda a predecir la etiqueta correcta para datos nuevos y desconocidos.</p>
+                    <ul>
+                        <li><strong>Ejemplo:</strong> Un detector de spam de correo electrónico se entrena con miles de correos etiquetados como "spam" o "no spam".</li>
+                    </ul>
+
+                    <h4>2. Aprendizaje No Supervisado</h4>
+                    <p>Aquí, el algoritmo trabaja con datos "no etiquetados". El objetivo no es predecir una respuesta, sino encontrar patrones, estructuras o agrupaciones (clusters) ocultas en los datos.</p>
+                    <ul>
+                        <li><strong>Ejemplo:</strong> Una empresa que utiliza el clustering para segmentar a sus clientes en diferentes grupos de compra basados en su comportamiento.</li>
+                    </ul>
+
+                    <h4>3. Aprendizaje por Refuerzo</h4>
+                    <p>Este tipo de aprendizaje se inspira en la psicología conductista. Un "agente" (el modelo) aprende a tomar decisiones interactuando con un entorno. Recibe "recompensas" por acciones correctas y "castigos" por acciones incorrectas, optimizando su estrategia para maximizar la recompensa total.</p>
+                    <ul>
+                        <li><strong>Ejemplo:</strong> Una IA que aprende a jugar ajedrez jugando millones de partidas contra sí misma.</li>
+                    </ul>
+
+                    <p>Comprender estas bases es fundamental para adentrarse en temas más complejos como el Deep Learning, que ha llevado la capacidad del ML a niveles asombrosos.</p>
+                    
+                </div>
+
+                <hr>
+
+                <footer class="">
+                    <p>&copy; 2025 - Blog creado para la Actividad 1.</p>
+                </footer>
+
+            </section>
+            <section class="recomendados">
+                <div class="frases">
+                    <h3>Frases de nuestros Bloggers</h3>
+                    <ul>
+                        <li>
+                            <div class="perfil">
+                                <img src="imgs/linus.jpg" alt="">
+                                Linus Torvalds
+                            </div>
+                            <blockquote><strong>
+                                Hablar es barato. ¡Enséñame el código!
+                            </strong></blockquote>
+                        </li>
+                        <li>
+                            <div class="perfil">
+                                <img src="imgs/guido.jpg" alt="">
+                                Guido van Rossum
+                            </div>
+                            <blockquote><strong>
+                                Python es un experimento sobre cuánta libertad necesitan los programadores
+                            </strong></blockquote>
+                        </li>
+                    </ul>
+                </div>
+                <div class="temas">
+                    <h3>
+                        Temas Recomendados
+                    </h3>
+                    <div class="contenido">
+                        <span class="etiqueta">Tecnología</span>
+                        <span class="etiqueta">Software</span>
+                        <span class="etiqueta">Red</span>
+                        <span class="etiqueta">Machine Learning</span>
+                        <span class="etiqueta">Inteligencia Artificial</span>
+                        <span class="etiqueta">Python</span>
+                        <span class="etiqueta">C++</span>
+                    </div>
+                </div>
+                <div class="personas">
+                    <h3>A quien seguir</h3>
+                    <ul>
+                        <li>
+                            <img src="imgs/linus.jpg" alt="">
+                            Linus Torvalds
+                        </li>
+                        <li>
+                            <img src="imgs/guido.jpg" alt="">
+                            Guido van Rossum
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

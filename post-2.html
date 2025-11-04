@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de ML Avanzado</title>
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/articulo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f4d5ee3736.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-header">
+                <button>
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </button>
+                <a href="index.html">
+                    <h1 class="logo">Sandoval</h1>
+                </a>
+            </div>
+            <div class="perfil-header">
+                <button>
+                    <i class="fa-regular fa-bell fa-xl"></i>
+                </button>
+                <span class="perfil">
+                    <img src="https://placehold.co/40x40/orange/white?font=montserrat&text=D">
+                </span>
+            </div>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">
+                            <i class="fa-solid fa-house"></i>
+                            Inicio
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="main-content">
+            
+                <h1 class="post-title-full">Deep Learning y Redes Neuronales: El Cerebro de la IA</h1>
+                
+                <img src="https://placehold.co/800x400/3c7a89/ffffff?text=Deep+Learning" alt="Imagen sobre Deep Learning y Redes Neuronales" class="post-image-full">
+                
+                <div class="post-content-full">
+                    <p>El Deep Learning (Aprendizaje Profundo) es un subcampo del Machine Learning que utiliza "Redes Neuronales Artificiales" para modelar y resolver problemas complejos. Si el ML es el coche, el Deep Learning es un motor de Fórmula 1.</p>
+
+                    <h3>¿Qué son las Redes Neuronales?</h3>
+                    <p>Las redes neuronales artificiales están inspiradas, de forma muy simplificada, en la estructura del cerebro humano. Consisten en capas de "neuronas" (nodos) interconectadas.</p>
+                    <ul>
+                        <li><strong>Capa de Entrada:</strong> Recibe los datos brutos (ej. los píxeles de una imagen).</li>
+                        <li><strong>Capas Ocultas:</strong> Procesan la información. Aquí es donde ocurre la "magia". El término "profundo" (deep) se refiere a tener múltiples capas ocultas.</li>
+                        <li><strong>Capa de Salida:</strong> Produce el resultado final (ej. la etiqueta "gato" o "perro").</li>
+                    </ul>
+
+                    <h3>¿Cómo funciona el "Aprendizaje Profundo"?</h3>
+                    <p>El poder del Deep Learning radica en su capacidad para aprender jerarquías de características. En el reconocimiento de imágenes, por ejemplo, las primeras capas pueden aprender a detectar bordes y líneas simples. Las siguientes capas combinan esas líneas para reconocer formas (círculos, cuadrados). Las capas más profundas combinan esas formas para reconocer objetos complejos como un rostro o un coche.</p>
+                    <p>Este aprendizaje automático de características es lo que permite al Deep Learning superar a otros métodos en tareas como la visión por computadora, el procesamiento del lenguaje natural (PLN) y el reconocimiento de voz.</p>
+                    
+                    <h4>Ejemplos Impactantes:</h4>
+                    <ul>
+                        <li><strong>Reconocimiento de Imágenes:</strong> El etiquetado automático de fotos en Google Photos o Facebook.</li>
+                        <li><strong>Traducción Automática:</strong> Herramientas como Google Translate que entienden el contexto de una frase.</li>
+                        <li><strong>Vehículos Autónomos:</strong> Sistemas que identifican peatones, señales de tráfico y otros vehículos en tiempo real.</li>
+                    </ul>
+                    
+                    <a href="index.html" class="back-link">&larr; Volver al inicio</a>
+                </div>
+
+                <hr>
+
+                <footer class="">
+                    <p>&copy; 2025 - Blog creado para la Actividad 1.</p>
+                </footer>
+
+            </section>
+            <section class="recomendados">
+                <div class="frases">
+                    <h3>Frases de nuestros Bloggers</h3>
+                    <ul>
+                        <li>
+                            <div class="perfil">
+                                <img src="imgs/linus.jpg" alt="">
+                                Linus Torvalds
+                            </div>
+                            <blockquote><strong>
+                                Hablar es barato. ¡Enséñame el código!
+                            </strong></blockquote>
+                        </li>
+                        <li>
+                            <div class="perfil">
+                                <img src="imgs/guido.jpg" alt="">
+                                Guido van Rossum
+                            </div>
+                            <blockquote><strong>
+                                Python es un experimento sobre cuánta libertad necesitan los programadores
+                            </strong></blockquote>
+                        </li>
+                    </ul>
+                </div>
+                <div class="temas">
+                    <h3>
+                        Temas Recomendados
+                    </h3>
+                    <div class="contenido">
+                        <span class="etiqueta">Tecnología</span>
+                        <span class="etiqueta">Software</span>
+                        <span class="etiqueta">Red</span>
+                        <span class="etiqueta">Machine Learning</span>
+                        <span class="etiqueta">Inteligencia Artificial</span>
+                        <span class="etiqueta">Python</span>
+                        <span class="etiqueta">C++</span>
+                    </div>
+                </div>
+                <div class="personas">
+                    <h3>A quien seguir</h3>
+                    <ul>
+                        <li>
+                            <img src="imgs/linus.jpg" alt="">
+                            Linus Torvalds
+                        </li>
+                        <li>
+                            <img src="imgs/guido.jpg" alt="">
+                            Guido van Rossum
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
