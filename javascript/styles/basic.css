@@ -1,0 +1,358 @@
+:root {
+    --primary-color: #3c7a89;
+    --dark-color: #2b2b2b;
+    --light-color: #f4f4f4;
+    --text-color: #333;
+    --border-color: #ddd;
+    --font-family: 'Inter', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: var(--light-color);
+    color: var(--text-color);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #D4D4D4;
+}
+
+header .logo-header{
+    display: flex;
+}
+
+header .logo-header button{
+    padding: 10px;
+
+    background-color: var(--light-color);
+    border: none;
+}
+
+header .logo-header a{
+    text-decoration: none;
+    color: black;
+}
+
+header .perfil-header{
+    display: flex;
+}
+
+header .perfil-header button{
+    padding: 10px;
+
+    background-color: var(--light-color);
+    border: none;
+}
+
+header .perfil-header .perfil img{
+    border-radius: 25px;
+}
+
+main{
+    display: flex;
+}
+main nav{
+    width:25%;
+    padding-top: 50px;
+
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #D4D4D4;
+}
+
+main nav ul li{
+    padding: 0 20px 20px 20px;
+}
+
+main nav ul li a{
+    text-decoration: none;
+    color: #999999;
+}
+
+main nav ul li a.active{
+    color: black;
+}
+
+main .post-list{
+    width: 50%;
+}
+
+main .recomendados{
+    width: 25%;
+
+    padding: 30px;
+
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: #D4D4D4;
+
+    font-size: 14px;
+}
+
+main .recomendados h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    font-size: 18px;
+}
+main .recomendados .frases ul{
+    list-style-type: none;
+}
+
+main .recomendados .frases .perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+main .recomendados .frases .perfil img{
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+main .recomendados .temas .contenido{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+main .recomendados .temas .contenido span{
+    background-color: #D4D4D4;
+    margin: 5px;
+    padding: 10px;
+
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+main .recomendados .personas ul{
+    list-style-type: none;
+}
+
+main .recomendados .personas li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+main .recomendados .personas li img{
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+main .main-content{
+    margin: 30px 300px 0px 300px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main .main-content h2{
+    margin: 10px;
+}
+
+main .main-content hr{
+    margin: 20px;
+    background-color: #D4D4D4;
+}
+
+main .main-content .post-card{
+    display: flex;
+}
+
+main .main-content .post-card img{
+    width:300px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Estilos para Práctica JS/AJAX (Actividad 2) --- */
+/* Estos son los nuevos estilos que he añadido al final */
+
+.practica-js-container,
+.practica-ajax-container {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.practica-js-container h3,
+.practica-ajax-container h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--light-color);
+    padding-bottom: 10px;
+}
+
+/* Botones de pestañas */
+.practica-js-botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 15px;
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: 1px solid var(--primary-color);
+    background-color: #fff;
+    color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: #f0f6f7;
+}
+
+.tab-btn.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Contenido de cada pestaña */
+.ejercicio-tab {
+    display: none; /* Oculto por defecto */
+    padding: 10px;
+    border: 1px dashed var(--border-color);
+    border-radius: 5px;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.ejercicio-tab.show {
+    display: block; /* Visible cuando está activo */
+}
+
+.ejercicio-tab p {
+    margin-bottom: 10px;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-family);
+}
+
+.form-btn {
+    background-color: #28a745; /* Botón verde (como en la imagen) */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.form-btn:hover {
+    background-color: #218838;
+}
+
+p.resultado {
+    margin-top: 15px;
+    font-weight: 700;
+    color: var(--dark-color);
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    min-height: 40px;
+}
+
+/* Contenedor principal de AJAX */
+.ajax-control {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.ajax-control label {
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.ajax-control input[type="text"] {
+    flex-grow: 1;
+    min-width: 200px;
+}
+
+.form-btn-ajax {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.form-btn-ajax:hover {
+    background-color: #2e5c68;
+}
+
+.ajax-resultado-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.ajax-caja {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 50px;
+    font-size: 0.9rem;
+    white-space: pre-wrap; /* Para que el texto se ajuste */
+    word-wrap: break-word; /* Para que las URLs largas se rompan */
+}
+
+.practica-ajax-container strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}

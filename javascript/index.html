@@ -1,1 +1,180 @@
-Hola
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio, JavaScript y AJAX</title>
+    <!-- Se mantiene el CSS original -->
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f4d5ee3736.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-header">
+                <button>
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </button>
+                <a href="index.html">
+                    <h1 class="logo">Sandoval</h1>
+                </a>
+            </div>
+            <div class="perfil-header">
+                <button>
+                    <i class="fa-regular fa-bell fa-xl"></i>
+                </button>
+                <span class="perfil">
+                    <img src="https://placehold.co/40x40/orange/white?font=montserrat&text=D">
+                </span>
+            </div>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fa-solid fa-house"></i>
+                            Inicio
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="main-content">
+            
+                <h2>Artículos</h2>
+               
+                <div class="practica-js-container">
+                    <h3>Prácticas de JavaScript (Actividad 2)</h3>
+                    <div class="practica-js-botones">
+
+                        <button data-tab="ejercicio-palindromo" class="tab-btn active">Verificar Palíndromo</button>
+                        <button data-tab="ejercicio-mayor" class="tab-btn">Mayor de Dos Números</button>
+                        <button data-tab="ejercicio-extraer" class="tab-btn">Extraer Vocales</button>
+                        <button data-tab="ejercicio-contar" class="tab-btn">Contar Vocales</button>
+                    </div>
+
+                    <div id="ejercicio-palindromo" class="ejercicio-tab show">
+                        <p><strong>Criterio 1:</strong> Ingresa una palabra o frase:</p>
+                        <input type="text" id="palindromo-input" placeholder="Ej. Ana" class="form-input">
+                        <button id="palindromo-btn" class="form-btn">Verificar</button>
+                        <p id="palindromo-resultado" class="resultado"></p>
+                    </div>
+                    <div id="ejercicio-mayor" class="ejercicio-tab">
+                        <p><strong>Criterio 2:</strong> Ingresa dos números:</p>
+                        <input type="number" id="mayor-num1" placeholder="Número 1" class="form-input">
+                        <input type="number" id="mayor-num2" placeholder="Número 2" class="form-input">
+                        <button id="mayor-btn" class="form-btn">Encontrar Mayor</button>
+                        <p id="mayor-resultado" class="resultado"></p>
+                    </div>
+                    <div id="ejercicio-extraer" class="ejercicio-tab">
+                        <p><strong>Criterio 3:</strong> Ingresa una frase:</p>
+                        <input type="text" id="extraer-input" placeholder="Frase para extraer vocales" class="form-input">
+                        <button id="extraer-btn" class="form-btn">Extraer</button>
+                        <p id="extraer-resultado" class="resultado"></p>
+                    </div>
+                    <div id="ejercicio-contar" class="ejercicio-tab">
+                        <p><strong>Criterio 4:</strong> Ingresa una frase:</p>
+                        <input type="text" id="contar-input" placeholder="Frase para contar vocales" class="form-input">
+                        <button id="contar-btn" class="form-btn">Contar</button>
+                        <p id="contar-resultado" class="resultado"></p>
+                    </div>
+                </div>
+
+                <div class="practica-ajax-container">
+                    <h3>Práctica de AJAX (Actividad 2)</h3>
+                    <div class="ajax-control">
+                        <label for="url-input">URL:</label>
+                        <input type="text" id="url-input" class="form-input">
+                        <button id="btn-mostrar-contenidos" class="form-btn-ajax">Mostrar Contenidos</button>
+                    </div>
+                    
+                    <div class="ajax-resultado-grid">
+                        <div>
+                            <strong>Criterio 7 (Estados):</strong>
+                            <div id="ajax-estados" class="ajax-caja">No iniciada</div>
+                        </div>
+                        <div>
+                            <strong>Criterio 9 (Código):</strong>
+                            <div id="ajax-codigo" class="ajax-caja">---</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <strong>Criterio 8 (Cabeceras):</strong>
+                        <pre id="ajax-cabeceras" class="ajax-caja">---</pre>
+                    </div>
+                    
+                    <div>
+                        <strong>Criterio 6 (Contenido):</strong>
+                        <pre id="ajax-contenido" class="ajax-caja">---</pre>
+                    </div>
+                </div>
+
+                <footer class="">
+                    <p>&copy; 2025 - Página funcional creada para Laboratorio JavaScript y AJAX.</p>
+                </footer>
+
+            </section>
+            <section class="recomendados">
+                <div class="frases">
+                    <h3>Frases de nuestros Bloggers</h3>
+                    <ul>
+                        <li>
+                            <div class="perfil">
+                                <img src="imgs/linus.jpg" alt="">
+                                Linus Torvalds
+                            </div>
+                            <blockquote><strong>
+                                Hablar es barato. ¡Enséñame el código!
+                            </strong></blockquote>
+                        </li>
+                        <li>
+                            <div class="perfil">
+                                <img src="imgs/guido.jpg" alt="">
+                                Guido van Rossum
+                            </div>
+                            <blockquote><strong>
+                                Python es un experimento sobre cuánta libertad necesitan los programadores
+                            </strong></blockquote>
+                        </li>
+                    </ul>
+                </div>
+                <div class="temas">
+                    <h3>
+                        Temas Recomendados
+                    </h3>
+                    <div class="contenido">
+                        <span class="etiqueta">Tecnología</span>
+                        <span class="etiqueta">Software</span>
+                        <span class="etiqueta">Red</span>
+                        <span class="etiqueta">Machine Learning</span>
+                        <span class="etiqueta">Inteligencia Artificial</span>
+                        <span class="etiqueta">Python</span>
+                        <span class="etiqueta">C++</span>
+                    </div>
+                </div>
+                <div class="personas">
+                    <h3>A quien seguir</h3>
+                    <ul>
+                        <li>
+                            <img src="imgs/linus.jpg" alt="">
+                            Linus Torvalds
+                        </li>
+                        <li>
+                            <img src="imgs/guido.jpg" alt="">
+                            Guido van Rossum
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
